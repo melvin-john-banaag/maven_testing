@@ -20,6 +20,7 @@ pipeline {
                     echo "Compiling..."
                     mvn compile
                     echo "Compiling Java Codes"
+                    mvn package
                 ''' 
             }
         }

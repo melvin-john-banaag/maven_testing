@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh '''
                     echo "cleaning package"
-                    mvn clean package
+                    mvn --version
                 ''' 
             }
         }

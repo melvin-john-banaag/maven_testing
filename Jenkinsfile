@@ -17,10 +17,8 @@ pipeline {
         stage ('Build') {
             steps {
                 sh '''
-                    echo "Compiling..."
-                    mvn compile
-                    echo "Compiling Java Codes"
-                    mvn package
+                    echo "cleaning package"
+                    mvn clean package
                 ''' 
             }
         }

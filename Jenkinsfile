@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh '''
                     echo "cleaning package"
-                    docker build -- version
+                    docker build --version
                 ''' 
             }
         }

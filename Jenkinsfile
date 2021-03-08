@@ -17,7 +17,6 @@ pipeline {
         stage ('Build') {
             steps {
                 sh '''
-                    echo "cleaning package"
                     mvn --version
                 ''' 
             }
